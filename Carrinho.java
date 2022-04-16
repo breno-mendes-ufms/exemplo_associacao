@@ -6,10 +6,14 @@ public class Carrinho {
 
     Pessoa pessoa;
 
-    public void addItem(Produto produto, int qtt) {
-        listaItem.add(produto);
-       // produto.estoque.quantidade = produto.estoque.quantidade - qtt;
+    public Carrinho(Pessoa pessoa) {
+        this.pessoa = pessoa;
+    }
 
+    public void addItem(int idx, int qtt) {
+        listaItem.add(Estoque.produtos.get(idx));
+        Estoque.quantidade.set(idx, (Estoque.quantidade.get(idx) - qtt));
+        
     }
 
 }
