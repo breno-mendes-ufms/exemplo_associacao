@@ -13,13 +13,15 @@ public class AppSistemaEComerce {
         // cadastro pessoa
 
         //Endereco endCliente = new Endereco("Brasil", "ms", "cg", "bairro", "rua", 100, "casa 2", "79 797 - 979");
-        Pessoa cliente  = new Pessoa("joao", 20, new Endereco("Brasil", "ms", "cg", "bairro", "rua", 100, "casa 2", "79 797 - 979"));
+        Pessoa cliente  = new Pessoa("joao", 20, new Endereco("79 797 - 979", 100, "n/a"));
 
         Carrinho carrinhoCliente = new Carrinho(cliente);
 
         carrinhoCliente.addItem(0 , 2);
 
         estoque.status();
+
+        cliente.status();
 
 
     
