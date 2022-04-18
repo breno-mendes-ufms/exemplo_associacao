@@ -23,6 +23,8 @@ public class AppSistemaEComerce {
 
         cliente.status();
 
+        carrinhoCliente.status();
+
 
     
 
